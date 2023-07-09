@@ -1,0 +1,29 @@
+{
+    "name": "randrei98/rotealablockchain",
+    "description": "PHP Librabry used in roteala blockchain project for generating new account addresses and signing PseudoTransactions",
+    "type": "library",
+    "require": {
+        "randrei98/ecdsaphp": "dev-release/2.0-Blockchain",
+        "php": ">=8.1",
+        "ext-openssl": "*",
+        "ext-gmp": "*",
+        "doctrine/annotations": "2.0.x-dev",
+        "bitcoin-php/bitcoin-ecdsa": "1.3.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "RotealaBlockchain\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "AndreiR98",
+            "email": "rotaru.andrei98@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "^5.2"
+    }
+}
