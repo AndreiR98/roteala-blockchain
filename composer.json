@@ -1,9 +1,9 @@
 {
     "name": "randrei98/rotealablockchain",
-    "description": "PHP Librabry used in roteala blockchain project for generating new account addresses and signing PseudoTransactions",
+    "description": "PHP Library used in roteala blockchain project for generating new account addresses and signing PseudoTransactions",
     "type": "library",
     "require": {
-        "randrei98/ecdsaphp": "dev-release/2.0-Blockchain",
+        "randrei98/ecdsaphp": "v2.1.0",
         "php": ">=8.1",
         "ext-openssl": "*",
         "ext-gmp": "*",
