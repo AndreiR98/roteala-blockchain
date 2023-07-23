@@ -56,9 +56,6 @@ class ECKeyWrapper extends Key
 
         $checkSum = substr($sha256Checksum, 0, 4);
 
-        //TODO:Implement setKid in Key class and assign checkSum as KID;
-        parent::getKID();
-
         $addressBytes = $prefixedHash . $checkSum;
 
         $bitcoinECDSA = new BitcoinECDSA();

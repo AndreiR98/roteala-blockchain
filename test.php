@@ -12,7 +12,7 @@ require_once(__DIR__.'/vendor/autoload.php');
 echo "<pre>";
 
 $key = new Key(Curves::SECP256k1(), Algorithms::ES256());
-$key->fromHexFormat("33e925d00ae14147844e852691cc2a68c9d4b506be1dd4bbf0347f318e9da2b6");
+$key->fromHexFormat("a2480b12b793611dcf98b16a719d828bddbc3118e7f566146e0f597783f28800");
 
 $keyWrapper = new ECKeyWrapper(Curves::SECP256k1(), Algorithms::ES256(), $key);
 

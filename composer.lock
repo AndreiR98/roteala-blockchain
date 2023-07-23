@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "95faac89db220233d2f396d4b151344a",
+    "content-hash": "08bdf7f2bef33d5f2f5e254d394febaf",
     "packages": [
         {
             "name": "bitcoin-php/bitcoin-ecdsa",
@@ -187,16 +187,16 @@
         },
         {
             "name": "doctrine/lexer",
-            "version": "3.0.x-dev",
+            "version": "3.1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/lexer.git",
-                "reference": "84a527db05647743d50373e0ec53a152f2cde568"
+                "reference": "0d54c073afb397d5896df60cc34170cf37dfad5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/lexer/zipball/84a527db05647743d50373e0ec53a152f2cde568",
-                "reference": "84a527db05647743d50373e0ec53a152f2cde568",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/0d54c073afb397d5896df60cc34170cf37dfad5e",
+                "reference": "0d54c073afb397d5896df60cc34170cf37dfad5e",
                 "shasum": ""
             },
             "require": {
@@ -244,7 +244,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/lexer/issues",
-                "source": "https://github.com/doctrine/lexer/tree/3.0.x"
+                "source": "https://github.com/doctrine/lexer/tree/3.1.x"
             },
             "funding": [
                 {
@@ -260,7 +260,227 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-12-15T16:57:16+00:00"
+            "time": "2023-07-05T07:23:35+00:00"
+        },
+        {
+            "name": "fgrosse/phpasn1",
+            "version": "v2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fgrosse/PHPASN1.git",
+                "reference": "42060ed45344789fb9f21f9f1864fc47b9e3507b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fgrosse/PHPASN1/zipball/42060ed45344789fb9f21f9f1864fc47b9e3507b",
+                "reference": "42060ed45344789fb9f21f9f1864fc47b9e3507b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "~2.0",
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
+            },
+            "suggest": {
+                "ext-bcmath": "BCmath is the fallback extension for big integer calculations",
+                "ext-curl": "For loading OID information from the web if they have not bee defined statically",
+                "ext-gmp": "GMP is the preferred extension for big integer calculations",
+                "phpseclib/bcmath_compat": "BCmath polyfill for servers where neither GMP nor BCmath is available"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FG\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Friedrich Große",
+                    "email": "friedrich.grosse@gmail.com",
+                    "homepage": "https://github.com/FGrosse",
+                    "role": "Author"
+                },
+                {
+                    "name": "All contributors",
+                    "homepage": "https://github.com/FGrosse/PHPASN1/contributors"
+                }
+            ],
+            "description": "A PHP Framework that allows you to encode and decode arbitrary ASN.1 structures using the ITU-T X.690 Encoding Rules.",
+            "homepage": "https://github.com/FGrosse/PHPASN1",
+            "keywords": [
+                "DER",
+                "asn.1",
+                "asn1",
+                "ber",
+                "binary",
+                "decoding",
+                "encoding",
+                "x.509",
+                "x.690",
+                "x509",
+                "x690"
+            ],
+            "support": {
+                "issues": "https://github.com/fgrosse/PHPASN1/issues",
+                "source": "https://github.com/fgrosse/PHPASN1/tree/v2.5.0"
+            },
+            "abandoned": true,
+            "time": "2022-12-19T11:08:26+00:00"
+        },
+        {
+            "name": "mdanter/ecc",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpecc/phpecc.git",
+                "reference": "34e2eec096bf3dcda814e8f66dd91ae87a2db7cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpecc/phpecc/zipball/34e2eec096bf3dcda814e8f66dd91ae87a2db7cd",
+                "reference": "34e2eec096bf3dcda814e8f66dd91ae87a2db7cd",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gmp": "*",
+                "fgrosse/phpasn1": "^2.0",
+                "php": "^7.0||^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.0||^8.0||^9.0",
+                "squizlabs/php_codesniffer": "^2.0",
+                "symfony/yaml": "^2.6|^3.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mdanter\\Ecc\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matyas Danter",
+                    "homepage": "http://matejdanter.com/",
+                    "role": "Author"
+                },
+                {
+                    "name": "Thibaud Fabre",
+                    "email": "thibaud@aztech.io",
+                    "homepage": "http://aztech.io",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Thomas Kerin",
+                    "email": "afk11@users.noreply.github.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "PHP Elliptic Curve Cryptography library",
+            "homepage": "https://github.com/phpecc/phpecc",
+            "keywords": [
+                "Diffie",
+                "ECDSA",
+                "Hellman",
+                "curve",
+                "ecdh",
+                "elliptic",
+                "nistp192",
+                "nistp224",
+                "nistp256",
+                "nistp384",
+                "nistp521",
+                "phpecc",
+                "secp256k1",
+                "secp256r1"
+            ],
+            "support": {
+                "issues": "https://github.com/phpecc/phpecc/issues",
+                "source": "https://github.com/phpecc/phpecc/tree/v1.0.0"
+            },
+            "time": "2021-01-16T19:42:14+00:00"
+        },
+        {
+            "name": "paragonie/constant_time_encoding",
+            "version": "v2.6.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/constant_time_encoding.git",
+                "reference": "58c3f47f650c94ec05a151692652a868995d2938"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/constant_time_encoding/zipball/58c3f47f650c94ec05a151692652a868995d2938",
+                "reference": "58c3f47f650c94ec05a151692652a868995d2938",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7|^8"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6|^7|^8|^9",
+                "vimeo/psalm": "^1|^2|^3|^4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ParagonIE\\ConstantTime\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com",
+                    "homepage": "https://paragonie.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Steve 'Sc00bz' Thomas",
+                    "email": "steve@tobtu.com",
+                    "homepage": "https://www.tobtu.com",
+                    "role": "Original Developer"
+                }
+            ],
+            "description": "Constant-time Implementations of RFC 4648 Encoding (Base-64, Base-32, Base-16)",
+            "keywords": [
+                "base16",
+                "base32",
+                "base32_decode",
+                "base32_encode",
+                "base64",
+                "base64_decode",
+                "base64_encode",
+                "bin2hex",
+                "encoding",
+                "hex",
+                "hex2bin",
+                "rfc4648"
+            ],
+            "support": {
+                "email": "info@paragonie.com",
+                "issues": "https://github.com/paragonie/constant_time_encoding/issues",
+                "source": "https://github.com/paragonie/constant_time_encoding"
+            },
+            "time": "2022-06-14T06:56:20+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -318,6 +538,123 @@
             "time": "2022-06-19T18:08:39+00:00"
         },
         {
+            "name": "phpseclib/phpseclib",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpseclib/phpseclib.git",
+                "reference": "90dc3cf6cbd60e775e810e90b7a3ff246bae8119"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/90dc3cf6cbd60e775e810e90b7a3ff246bae8119",
+                "reference": "90dc3cf6cbd60e775e810e90b7a3ff246bae8119",
+                "shasum": ""
+            },
+            "require": {
+                "paragonie/constant_time_encoding": "^2",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "brianium/paratest": "^6.6",
+                "ext-xml": "*",
+                "friendsofphp/php-cs-fixer": "^3.12",
+                "php-parallel-lint/php-parallel-lint": "^1.3",
+                "squizlabs/php_codesniffer": "^3.7",
+                "vimeo/psalm": "^4.29"
+            },
+            "suggest": {
+                "ext-dom": "Install the DOM extension to load XML formatted public keys.",
+                "ext-gmp": "Install the GMP (GNU Multiple Precision) extension in order to speed up arbitrary precision integer arithmetic operations.",
+                "ext-libsodium": "SSH2/SFTP can make use of some algorithms provided by the libsodium-php extension.",
+                "ext-openssl": "Install the OpenSSL extension in order to speed up a wide variety of cryptographic operations."
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "phpseclib3\\": "phpseclib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jim Wigginton",
+                    "email": "terrafrost@php.net",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Patrick Monnerat",
+                    "email": "pm@datasphere.ch",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Andreas Fischer",
+                    "email": "bantu@phpbb.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Hans-Jürgen Petrich",
+                    "email": "petrich@tronic-media.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jack Worman",
+                    "email": "jack.worman@gmail.com",
+                    "homepage": "https://jackworman.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP Secure Communications Library - Pure-PHP implementations of RSA, AES, SSH2, SFTP, X.509 etc.",
+            "homepage": "https://phpseclib.com/",
+            "keywords": [
+                "BigInteger",
+                "aes",
+                "asn.1",
+                "asn1",
+                "blowfish",
+                "crypto",
+                "cryptography",
+                "encryption",
+                "rsa",
+                "security",
+                "sftp",
+                "signature",
+                "signing",
+                "ssh",
+                "twofish",
+                "x.509",
+                "x509"
+            ],
+            "support": {
+                "issues": "https://github.com/phpseclib/phpseclib/issues",
+                "source": "https://github.com/phpseclib/phpseclib/tree/master"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/terrafrost",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/phpseclib",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpseclib/phpseclib",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-07-20T00:33:44+00:00"
+        },
+        {
             "name": "psr/cache",
             "version": "dev-master",
             "source": {
@@ -372,24 +709,26 @@
         },
         {
             "name": "randrei98/ecdsaphp",
-            "version": "dev-release/2.0-Blockchain",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AndreiR98/ECDSA-PHP.git",
-                "reference": "5253b9aec16acb8b6699177d0cc9538379c85fcd"
+                "reference": "59557d59425c2361df5d50c42ed390fab341f343"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AndreiR98/ECDSA-PHP/zipball/5253b9aec16acb8b6699177d0cc9538379c85fcd",
-                "reference": "5253b9aec16acb8b6699177d0cc9538379c85fcd",
+                "url": "https://api.github.com/repos/AndreiR98/ECDSA-PHP/zipball/59557d59425c2361df5d50c42ed390fab341f343",
+                "reference": "59557d59425c2361df5d50c42ed390fab341f343",
                 "shasum": ""
             },
             "require": {
                 "brick/math": "0.11.0",
                 "ext-gmp": "*",
                 "ext-openssl": "*",
+                "mdanter/ecc": "dev-master",
                 "paragonie/random_compat": "dev-master",
-                "php": ">=8.1"
+                "php": ">=8.1",
+                "phpseclib/phpseclib": "dev-master"
             },
             "require-dev": {
                 "phpunit/phpunit": "^5.2"
@@ -413,9 +752,9 @@
             "description": "Elliptical curve cryptography for PHP",
             "support": {
                 "issues": "https://github.com/AndreiR98/ECDSA-PHP/issues",
-                "source": "https://github.com/AndreiR98/ECDSA-PHP/tree/2.0.0.BLOCKCHAIN"
+                "source": "https://github.com/AndreiR98/ECDSA-PHP/tree/v2.1.0"
             },
-            "time": "2023-06-26T21:19:07+00:00"
+            "time": "2023-07-09T23:01:04+00:00"
         }
     ],
     "packages-dev": [
@@ -838,12 +1177,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-timer.git",
-                "reference": "5d6bb9f95340b2ed9b0da8ee3a1911530205d25b"
+                "reference": "12bd28f5b16ee4a856626e72f7f800a138f1859f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/5d6bb9f95340b2ed9b0da8ee3a1911530205d25b",
-                "reference": "5d6bb9f95340b2ed9b0da8ee3a1911530205d25b",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/12bd28f5b16ee4a856626e72f7f800a138f1859f",
+                "reference": "12bd28f5b16ee4a856626e72f7f800a138f1859f",
                 "shasum": ""
             },
             "require": {
@@ -891,7 +1230,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-26T07:43:19+00:00"
+            "time": "2023-07-17T05:04:07+00:00"
         },
         {
             "name": "phpunit/php-token-stream",
@@ -1755,7 +2094,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "randrei98/ecdsaphp": 20,
         "doctrine/annotations": 20
     },
     "prefer-stable": false,
