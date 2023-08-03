@@ -1,12 +1,12 @@
 <?php
 
 namespace RotealaBlockchain\models;
-enum TransactionStatus: string
+enum TransactionStatus: int
 {
-    case PENDING = '001';
-    case VALIDATED = '002';
-    case PROCESSED = '003';
-    case SUCCESS = '004';
+    case PENDING = 1;
+    case VALIDATED = 2;
+    case PROCESSED = 3;
+    case SUCCESS = 4;
 
     public function getCode(): string
     {

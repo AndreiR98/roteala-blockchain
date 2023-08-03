@@ -17,6 +17,8 @@ class PseudoTransaction
     private string $value;
     private int $nonce;
     private int $timeStamp;
+
+    private string $fees;
     private TransactionStatus $status;
     private string $pubKeyHash;
     private Signature $signature;
@@ -96,6 +98,14 @@ class PseudoTransaction
     }
 
     /**
+     * @param string $fees
+     */
+    public function setFees(string $fees): void
+    {
+        $this->fees = $fees;
+    }
+
+    /**
      * @return string
      */
     public function getFrom(): string
@@ -117,6 +127,14 @@ class PseudoTransaction
     public function getPubKeyHash(): string
     {
         return $this->pubKeyHash;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFees(): string
+    {
+        return $this->fees;
     }
 
     /**
@@ -201,6 +219,7 @@ class PseudoTransaction
         $fields = [
             "from"=>$this->from,
             "to"=>$this->to,
+            "fees"=>$this->fees,
             "version"=>$this->version,
             "value"=>$this->value,
             "timeStamp"=>$this->timeStamp,
@@ -229,6 +248,7 @@ class PseudoTransaction
         $fields = [
             "from"=>$this->from,
             "to"=>$this->to,
+            "fees"=>$this->fees,
             "version"=>$this->version,
             "value"=>$this->value,
             "timeStamp"=>$this->timeStamp,
@@ -252,6 +272,7 @@ class PseudoTransaction
             "pseudo_hash"=>$this->pseudoHash,
             "from"=>$this->from,
             "to"=>$this->to,
+            "fees"=>$this->fees,
             "version"=>$this->version,
             "value"=>$this->value,
             "time_stamp"=>$this->timeStamp,
